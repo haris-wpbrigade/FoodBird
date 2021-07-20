@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Food Bird</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <div class="site-body">
+    <aside class="aside">
+      <div class="nav-logo">
+        <a href="#"> 
+          <img src="img/logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="container">
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li class="active"><a href="#">home</a></li>
+            <li><a href="#">foodbirds</a></li>
+            <li><a href="#">partners</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+        <ul class="social-links">
+          <li><a href="#"><img src="img/fbicon.png" alt="fb icon"></a></li>
+          <li><a href="#"><img src="img/pinterst.png" alt="pinterst icon"></a></li>
+          <li><a href="#"><img src="img/istagram.png" alt="instagram icon"></a></li>
+        </ul>
+      </div>
+    </aside>
+  
+    <div class="main-content">
+      <div class="top-banner">
+        <h1>welkom</h1>
+      </div>
+      <div class="info-box">
+        <div class="container">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+          <a href="#" class="CTA-btn">lees meer</a>
+        </div>
+      </div>
+      <div class="Slider-section">
+        <div class="container">
+          <h2>foodbirds</h2>
+          <div class="slider-box">
+            <div class="indicators">
+              <button class="prev-btn"><img src="img/leftarrow.png" alt="leftarrow"></button>
+              <button class="next-btn"><img src="img/rightarrow.png" alt="rightarrow"></button>
+            </div>
+            <div class="slides">
+              <img src="img/sliderimg.png" alt="sliderimg">
+              <img src="img/sliderimg2.png" alt="sliderimg">
+              <img src="img/sliderimg2.png" alt="sliderimg">
+            </div>
+          </div>
+          <div class="slider-info">  
+            <h3>lorem ipsum dolor</h3>
+            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor et dolore aliqua.</p>
+            <a href="#" class="CTA-btn">naar deze foodtruck</a>
+          </div>
+        </div>
+      </div>
+      <div class="Partners-section">
+        <h2>wij zijn trots op onze partners</h2>
+        <div class="container">
+          <div class="card">
+            <div class="card-img"><img src="img/gcd-logo.png" alt="gcd-logo"></div>
+            <div class="card-info">  
+              <h3>gedachtegoed</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do labore et dolore magna aliqua.</p>
+              <a href="#">www.gedachtegoed.nl</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img"><img src="img/gutsandglury.png" alt="gutsandglury"></div>
+            <div class="card-info">  
+              <h3>guts & glory</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do labore et dolore magna aliqua.</p>
+              <a href="#">www.guts&glory.com</a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="CTA-btn">bekijk hier alle partners</a>
+      </div>
+      <footer class="footer"></footer>
+    </div>
+  </div>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script type="text/javascript">
+    $('.slider-box .slides').slick({
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      prevArrow: $('.slider-box .indicators .prev-btn'),
+      nextArrow: $('.slider-box .indicators .next-btn'),
+    });
+  </script>
+
+</body>
+
+</html>
