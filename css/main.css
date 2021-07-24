@@ -67,18 +67,21 @@ a {
 
 .site-body {
   display: flex;
-  max-width: 1024px;
+  max-width: 1025px;
   margin: 0 auto;
 }
 
 .main-content {
   flex: 1;
+  width: 70%;
 }
 
 .aside {
   position: sticky;
   background: #fcfcfc;
-  height: 100vh;
+  width: 229px;
+  min-width: 229px;
+  height: 100%;
   top: 0;
   overflow: hidden;
 }
@@ -93,6 +96,10 @@ a {
 .aside .container {
   display: grid;
   place-items: center;
+}
+
+.aside .toggle-btn {
+  display: none;
 }
 
 .aside .nav-menu ul.nav-list {
@@ -126,7 +133,7 @@ a {
   text-transform: capitalize;
   font-size: 24px;
   line-height: 61px;
-  font-weight: 600;
+  font-weight: 400;
   color: #000000;
   padding: 18px 45px;
 }
@@ -150,6 +157,28 @@ a {
 
 .main-content {
   background: #f1efe9;
+}
+
+.main-content .brand-head {
+  background-color: #fff;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  padding: 10px 10px 6px;
+  top: 0;
+  z-index: 5;
+}
+
+.main-content .toggle-btn {
+  display: none;
+  position: absolute;
+  top: 46%;
+  transform: translateY(-50%);
+  left: 12px;
+  outline: none;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .main-content .top-banner {
@@ -179,21 +208,21 @@ a {
 }
 
 .main-content .info-box {
-  padding: 86px 50px 103px;
+  padding: 86px 36px 103px;
 }
 
 .info-box .container {
   display: grid;
   place-items: center;
   text-align: center;
-  max-width: 94%;
+  max-width: 666px;
 }
 
 .info-box p {
   font-family: ChaparralPro, sans-serif;
   font-size: 20px;
   line-height: 1.6;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.2px;
   font-weight: 400;
   color: #000000;
   text-align: center;
@@ -205,10 +234,7 @@ a {
 }
 
 .Slider-section {
-  background: linear-gradient(to right, #f1efe970, #f1efe98c), url(../img/cardboard_texture_by_eveblackwoodstock-d6fquc7.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url(../img/slidersectionbg.png);
   padding: 63px 50px 90px;
 }
 
@@ -298,7 +324,7 @@ a {
 
 .slider-info {
   text-align: center;
-  max-width: 70%;
+  max-width: 430px;
 }
 
 .slider-info h3 {
@@ -315,7 +341,7 @@ a {
   font-family: ChaparralPro;
   color: #000000;
   line-height: 24px;
-  letter-spacing: 1px;
+  letter-spacing: 0.2px;
   margin-bottom: 38px;
 }
 
@@ -324,7 +350,7 @@ a {
 }
 
 .Partners-section {
-  padding: 63px 50px 88px;
+  padding: 63px 42px 88px;
   display: grid;
   place-items: center;
 }
@@ -359,13 +385,12 @@ a {
   align-items: center;
 }
 
-.Partners-section .card-info{
-  padding: 3px 26px 43px;
+.Partners-section .card-info {
+  padding: 0 33px 43px;
 }
 
 .Partners-section .card-info h3 {
   font-family: GoodHeadline, sans-serif;
-  font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
   color: #000000;
@@ -388,18 +413,75 @@ a {
   transition: 0.3s all;
 }
 
-.Partners-section .card-info a:hover{
+.Partners-section .card-info a:hover {
   text-decoration: none;
 }
 
-.Partners-section .CTA-btn{
+.Partners-section .CTA-btn {
   padding: 0 12px;
 }
 
-.footer{
+.footer {
   background: url(../img/footerimg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 164px 0;
+}
+
+@media (max-width: 767px) {
+  .aside {
+    position: fixed;
+    width: 0;
+    min-width: 0;
+    z-index: 999;
+    transition: 0.6s ease-in-out;
+  }
+
+  .aside.active {
+    width: 229px;
+    min-width: 229px;
+  }
+
+  .aside .toggle-btn {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .main-content .brand-head {
+    display: flex;
+  }
+
+  .main-content .toggle-btn {
+    display: block;
+  }
+
+  .main-content .top-banner {
+    height: 172px;
+    padding-bottom: 35px;
+  }
+
+  .top-banner h1 {
+    font-size: 42px;
+  }
+
+  .main-content .info-box {
+    padding: 32px 15px;
+  }
+
+  .Partners-section .container {
+    flex-direction: column;
+  }
+
+  .slider-box {
+    width: 250px;
+    height: 156px;
+  }
+
+  .Slider-section {
+    padding: 63px 16px 90px;
+  }
 }
