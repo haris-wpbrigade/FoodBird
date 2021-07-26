@@ -93,7 +93,7 @@ a {
 }
 
 .aside .nav-menu .nav-list li.active a {
-  font-weight: 700;
+  color: #a0a51c;
 }
 
 .aside .nav-menu ul.nav-list li a {
@@ -109,7 +109,7 @@ a {
 }
 
 .aside .nav-menu .nav-list li a:hover {
-  font-weight: 700;
+  color: #a0a51c;
 }
 
 .aside .social-links {
@@ -208,8 +208,9 @@ a {
 }
 
 .Slider-section {
-  background: url(../img/slidersectionbg.png);
+  background: url(../img/slidersectionbg.png) repeat;
   padding: 63px 0 90px;
+  overflow: hidden;
 }
 
 .Slider-section h2 {
@@ -325,9 +326,10 @@ a {
 }
 
 .Partners-section {
-  padding: 63px 42px 88px;
+  padding: 63px 42px 92px;
   display: grid;
   place-items: center;
+  overflow: hidden;
 }
 
 .Partners-section h2 {
@@ -335,7 +337,8 @@ a {
   font-family: 'akrobatlight', sans-serif;
   color: #000000;
   text-transform: uppercase;
-  line-height: 1.286;
+  line-height: 1.286;    
+  letter-spacing: 1px;
   text-align: center;
   margin-bottom: 37px;
 }
@@ -344,7 +347,7 @@ a {
   display: flex;
   justify-content: center;
   gap: 18px;
-  margin-bottom: 52px;
+  margin-bottom: 56px;
 }
 
 .Partners-section .card {
@@ -354,14 +357,14 @@ a {
 }
 
 .Partners-section .card .card-img {
-  height: 183px;
+  min-height: 183px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .Partners-section .card-info {
-  padding: 0 33px 43px;
+  padding: 0 22px 43px 16px;
 }
 
 .Partners-section .card-info h3 {
@@ -369,14 +372,15 @@ a {
   line-height: 24px;
   text-transform: uppercase;
   color: #000000;
+  margin-bottom: 11px;
 }
 
 .Partners-section .card-info p {
-  font-family: 'akrobatregular', sans-serif;
+  font-family: 'Chaparral Pro', sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  margin: 12px 0 6px;
+  margin-bottom: 6px;
 }
 
 .Partners-section .card-info a {
@@ -401,7 +405,7 @@ a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 164px 0;
+  min-height: 330px;
 }
 
 @media (max-width: 767px) {
@@ -410,7 +414,7 @@ a {
     width: 0;
     min-width: 0;
     z-index: 999;
-    transition: 0.6s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
 
   .aside.active {
@@ -452,6 +456,7 @@ a {
 
   .main-content .brand-head {
     display: flex;
+    padding-bottom: 3px;
   }
 
   .main-content .toggle-btn {
@@ -468,14 +473,14 @@ a {
   }
 
   .main-content .info-box {
-    padding: 36px 20px 46px;
+    padding: 36px 30px 46px;
   }
 
   .info-box p{
     height: 160px;
     overflow: hidden;
     font-size: 18px;
-    line-height: 1.3;
+    line-height: 24px;
     margin-bottom: 28px;
   }
 
@@ -494,8 +499,25 @@ a {
 
   .slider-box {
     width: 250px;
-    height: 156px;
-    margin-bottom: 54px;
+    height: 158px;
+    margin-bottom: 52px;
+  }
+
+  .slider-box .indicators button{
+    height: 17px;
+    width: 17px;
+  }
+
+  .prev-btn{
+    left: -12px;
+  }
+
+  .next-btn{
+    right: -9px;
+  }
+
+  .slider-box .slick-dots {
+    bottom: -23px;
   }
 
   .slider-info{
@@ -504,12 +526,13 @@ a {
 
   .slider-info h3{
     font-size: 21px;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
   }
 
   .slider-info p{
     font-size: 16px;
-    margin-bottom: 17px;
+    line-height: 21px;
+    margin-bottom: 24px;
   }
 
   .Partners-section .container {
@@ -523,7 +546,7 @@ a {
   }
 
   .Partners-section .card .card-img {
-    height: 160px;
+    min-height: 160px;
   }
 
   .Partners-section .card-info {
@@ -533,6 +556,10 @@ a {
   .Partners-section h2 {
     font-size: 22px;
     margin-bottom: 18px;
+  }
+
+  .Partners-section .card-info h3{
+    margin-bottom: 14px;
   }
 
   .Partners-section .CTA-btn {
