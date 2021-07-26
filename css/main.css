@@ -165,7 +165,7 @@ a {
   justify-content: center;
   align-items: center;
   position: sticky;
-  padding: 10px 10px 6px;
+  padding: 9px 10px 7px;
   top: 0;
   z-index: 5;
 }
@@ -439,16 +439,40 @@ a {
   }
 
   .aside.active {
-    width: 229px;
-    min-width: 229px;
+    min-width: 208px;
+  }
+
+  .aside .nav-logo{
+    padding: 36px 25px 40px 30px;
+    margin-bottom: 18px;
+  }
+
+  .aside .nav-logo img{
+    max-width: 148px;
+  }
+
+  .aside .nav-menu ul.nav-list li a{
+    font-size: 20px;
+    line-height: 48px;
   }
 
   .aside .toggle-btn {
     display: block;
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 14px;
+    right: 18px;
     cursor: pointer;
+  }
+
+  .aside .social-links{
+    margin-top: 26px;
+    width: 58%;
+  }
+
+  .CTA-btn{
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 0;
   }
 
   .main-content .brand-head {
@@ -469,19 +493,74 @@ a {
   }
 
   .main-content .info-box {
-    padding: 32px 15px;
+    padding: 36px 20px 46px;
   }
 
-  .Partners-section .container {
-    flex-direction: column;
+  .info-box p{
+    height: 160px;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 28px;
+  }
+
+  .info-box .CTA-btn{
+    padding: 0 22px;
+  }
+
+  .Slider-section {
+    padding: 26px 16px 48px;
+  }
+
+  .Slider-section h2{
+    font-size: 22px;
+    margin-bottom: 10px;
   }
 
   .slider-box {
     width: 250px;
     height: 156px;
+    margin-bottom: 54px;
   }
 
-  .Slider-section {
-    padding: 63px 16px 90px;
+  .slider-info{
+    max-width: 238px;
+  }
+
+  .slider-info h3{
+    font-size: 21px;
+    margin-bottom: 4px;
+  }
+
+  .slider-info p{
+    font-size: 16px;
+    margin-bottom: 17px;
+  }
+
+  .Partners-section .container {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+
+  .Partners-section{
+    padding: 31px 18px 46px;
+  }
+
+  .Partners-section .card .card-img {
+    height: 160px;
+  }
+
+  .Partners-section .card-info {
+    padding: 0 18px 26px;
+  }
+
+  .Partners-section h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .Partners-section .CTA-btn {
+    padding: 0 23px;
   }
 }
