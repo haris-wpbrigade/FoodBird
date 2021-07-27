@@ -31,7 +31,7 @@ a {
 }
 
 .CTA-btn:hover {
-  background: #ca6800;
+  background: #a0a51c;
 }
 
 .site-body {
@@ -122,12 +122,11 @@ a {
 }
 
 .aside .social-links li {
-  opacity: 0.7;
   transition: 0.3s all;
 }
 
 .aside .social-links li:hover {
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .main-content .brand-head {
@@ -153,8 +152,9 @@ a {
 }
 
 .main-content .top-banner {
-  height: 368px;
+  min-height: 368px;
   width: 100%;
+  background-color: #a0a51c;
   background: url(../img/homepagebannerimg.png);
   background-position: center;
   background-size: cover;
@@ -163,7 +163,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding-bottom: 60px;
+  padding: 15px 15px 60px;
 }
 
 .top-banner h1 {
@@ -178,14 +178,14 @@ a {
 }
 
 .main-content .info-box {
-  padding: 86px 36px 103px;
+  padding: 86px 0 103px;
 }
 
 .info-box .container {
   display: grid;
   place-items: center;
   text-align: center;
-  max-width: 666px;
+  padding: 0 80px;
 }
 
 .info-box p {
@@ -204,6 +204,7 @@ a {
 }
 
 .Slider-section {
+  background-color: #dad9d3;
   background: url(../img/slidersectionbg.png) repeat;
   padding: 63px 0 90px;
   overflow: hidden;
@@ -397,6 +398,7 @@ a {
 }
 
 .footer {
+  background-color: #737269;
   background: url(../img/footerimg.png);
   background-position: center;
   background-size: cover;
@@ -460,7 +462,7 @@ a {
   }
 
   .main-content .top-banner {
-    height: 172px;
+    min-height: 172px;
     padding-bottom: 35px;
   }
 
@@ -469,12 +471,14 @@ a {
   }
 
   .main-content .info-box {
-    padding: 36px 30px 46px;
+    padding: 36px 0 46px;
+  }
+
+  .info-box .container {
+    padding: 0 45px;
   }
 
   .info-box p{
-    height: 160px;
-    overflow: hidden;
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 28px;
@@ -493,12 +497,6 @@ a {
     margin-bottom: 10px;
   }
 
-  .slider-box {
-    width: 250px;
-    height: 158px;
-    margin-bottom: 52px;
-  }
-
   .slider-box .indicators button{
     height: 17px;
     width: 17px;
@@ -514,10 +512,6 @@ a {
 
   .slider-box .slick-dots {
     bottom: -23px;
-  }
-
-  .slider-info{
-    max-width: 238px;
   }
 
   .slider-info h3{
@@ -560,5 +554,17 @@ a {
 
   .Partners-section .CTA-btn {
     padding: 0 23px;
+  }
+}
+
+@media (max-width: 521px){
+  .slider-box {
+    max-width: 250px;
+    max-height: 158px;
+    margin-bottom: 52px;
+  }
+  
+  .slider-info{
+    max-width: 238px;
   }
 }
