@@ -1,3 +1,57 @@
+@font-face {
+  font-family: 'akrobatbold';
+  src: url('../fonts/akrobat-bold-webfont.woff2') format('woff2'),
+       url('../fonts/akrobat-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'akrobatlight';
+  src: url('../fonts/akrobat-light-webfont.woff2') format('woff2'),
+       url('../fonts/akrobat-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'akrobatregular';
+  src: url('../fonts/akrobat-regular-webfont.woff2') format('woff2'),
+       url('../fonts/akrobat-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'akrobatsemibold';
+  src: url('../fonts/akrobat-semibold-webfont.woff2') format('woff2'),
+       url('../fonts/akrobat-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Chaparral Pro';
+  src: url('../fonts/ChaparralPro-Bold.woff2') format('woff2'),
+      url('../fonts/ChaparralPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chaparral Pro';
+  src: url('../fonts/ChaparralPro-Regular.woff2') format('woff2'),
+      url('../fonts/ChaparralPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +85,7 @@ a {
 }
 
 .CTA-btn:hover {
-  background: #a0a51c;
+  background: #d66e00;
 }
 
 .site-body {
